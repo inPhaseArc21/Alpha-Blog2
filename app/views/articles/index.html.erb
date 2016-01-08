@@ -1,10 +1,8 @@
-<h1> Listing all Articles </h1>
 
-<p>
-	<%= link_to "Create New Article", new_article_path %>
-</p>
+<h1> Blog - Articles Listing </h1> 
 
-<table style>
+
+<table style = "width:50%; height:80px; text-align:center">
 	<tr>
 		<th> Title </th>
 		<th> Description </th>
@@ -24,3 +22,8 @@
 
 
 </table>
+
+<p>
+	<%= link_to "Create New Article", new_article_path %> | <%= link_to "Back to Home", root_path %>
+</p>
+
