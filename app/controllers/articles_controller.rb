@@ -49,13 +49,7 @@ class ArticlesController < ApplicationController
 		redirect_to articles_path
 	end
 
-	def sign_up
-		@user = User.new 
-
-
-	end
-
-
+	
 
 	private 
 		def set_article
