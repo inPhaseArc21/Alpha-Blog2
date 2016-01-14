@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   resources :articles 
 
+  get 'signup', to: 'users#new'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
