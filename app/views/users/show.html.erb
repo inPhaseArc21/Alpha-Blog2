@@ -1,10 +1,10 @@
-<h1 align = "center"> Welcome to <%= @user.username %>'s page </h1>
+<h1 align = "center"> Welcome to <%= @users.username %>'s page </h1>
 <div class = "row">
 	<div align = "center">
-		<%= gravatar_for @user, size: 150 %>
+		<%= gravatar_for @users, size: 150 %>
 	</div>
 </div>
 
-<h4 align = "center"> <%= @user.username %>'s articles </h4>
+<h4 align = "center"> <%= @users.username %>'s articles </h4>
 
-<%= render 'articles/article', obj: @user.articles %>
+<%= render 'articles/article', obj: @users.articles %>
