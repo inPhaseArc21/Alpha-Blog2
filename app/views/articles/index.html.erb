@@ -1,8 +1,11 @@
 
 <h1 align = "center"> Articles Listing </h1> 
 
-<%= render "article", obj: @articles%>
+<div align = "center">
+	<%= will_paginate %>
+</div>
 
+<%= render "article", obj: @articles%>
 
 
 <div class = "home-actions">
@@ -12,4 +15,6 @@
 	<%= link_to "Back to Home", root_path, class: "btn btn-xs btn-primary"%>
 </div>
 
-
+<div align = "center">
+	<%= will_paginate %>
+</div>
