@@ -19,3 +19,4 @@ before_save { self.email = email.downcase }
 
 
 end
+
