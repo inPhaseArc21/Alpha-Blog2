@@ -1,23 +1,15 @@
 
 <h1 align = "center"> Articles Listing </h1> 
-
 <div align = "center">
 	<%= will_paginate %>
 </div>
 
 <%= render "article", obj: @articles%>
-
-
 <div class = "home-actions">
-
 	<% if logged_in? %>
-
-	<%= link_to "Create New Article", new_article_path, class: "btn btn-xs btn-primary"%> 
-
+		<%= link_to "Create New Article", new_article_path, class: "btn btn-xs btn-primary"%> 
 	<% end %>
-
 	<%= link_to "Back to Home", root_path, class: "btn btn-xs btn-primary"%>
-
 </div>
 
 <div align = "center">
